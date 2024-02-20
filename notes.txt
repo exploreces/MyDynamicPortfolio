@@ -1,0 +1,6 @@
+incomplete works -- allcompleted! (20.02.2024)
+resume content have to change --donee
+grid section code class divs naming must be change --donee
+project card section must have content -- donee
+the nav bar function of scroolypsy with java script. -- donee
+

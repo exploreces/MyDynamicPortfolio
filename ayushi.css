@@ -1,0 +1,730 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    font-style: none;
+    text-decoration: none;
+}
+
+:root {
+    --bg-color: #1f1f21;
+    --text-color: #fff;
+    --main-color: #ffae00;
+
+    --big-font: 7rem;
+    --p-font: 1.1rem;
+}
+
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+    overflow-x: hidden;
+
+}
+
+.space {
+    height: 3px;
+    width: 100%;
+    background: red;
+}
+
+/*=============================================== header section & Navigation bar Styles ==========================================*/
+
+header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 34px 15%;
+    background: transparent;
+    transition: all ease .45s;
+
+}
+
+.logo {
+    color: var(--text-color);
+    font-size: 41px;
+    font-weight: 600;
+    padding-right: 20px;
+
+
+}
+
+.logo span {
+    color: var(--main-color);
+}
+
+.navbar {
+    display: flex;
+
+
+}
+
+.navbar a {
+    font-size: var(--p-font);
+    font-weight: 500;
+    color: var(--text-color);
+    margin: 10px 20px;
+    transition: all ease .50s;
+    border-radius: 1px;
+    background: #1f1f21;
+    box-shadow: 10px 10px 20px #030303, -10px -10px 20px #16161a;
+    padding: 15px 15px;
+    /* Adjust padding as needed */
+}
+
+
+.navbar a:hover {
+    color: var(--main-color);
+}
+
+.navbar a.active {
+    color: var(--main-color);
+
+}
+
+.menu-btn {
+    background: linear-gradient(130.08deg, #383528 0%, #191919 100%);
+    box-shadow: 0px 20px 40px #00000070;
+    border: 1px solid #3b3b3b;
+    padding: 10px 20px;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+}
+
+#menu-icon {
+    font-size: 28px;
+    margin-left: 10px;
+    z-index: 6;
+}
+
+/* ============================================= elements shapes stylings =======================================================*/
+
+/*======= trianle - element -1========= */
+.tri-position {
+    position: absolute;
+    bottom: 8%;
+    right: 5%;
+    transform: rotate(19deg);
+    /* Rotating */
+}
+
+.element {
+    height: 0;
+    width: 0;
+    margin: 2%;
+    border-style: solid;
+    border-width: 0 0 10.3vw 10.3vw;
+    border-color: transparent transparent #FAD02C transparent;
+}
+
+
+/* =============  trianle - element -3============= */
+.tri-position3 {
+    position: absolute;
+    bottom: 60%;
+    right: 5%;
+    transform: rotate(100deg);
+}
+
+.element3 {
+    height: 0;
+    width: 0;
+    margin: 2%;
+    border-style: solid;
+    border-width: 0 0 9vw 9vw;
+    border-color: transparent transparent #94d82d transparent;
+}
+
+/* =============  trianle - element -4============= */
+.tri-position4 {
+    position: absolute;
+    bottom: 10%;
+    right: 18%;
+    transform: rotate(20deg);
+}
+
+.element4 {
+    height: 0;
+    width: 0;
+    margin: 2%;
+    border-style: solid;
+    border-width: 0 0 5vw 5vw;
+    border-color: transparent transparent #C197D2 transparent;
+}
+
+/* =============  trianle - element -5 ============= */
+.tri-position5 {
+    position: absolute;
+    bottom: 62%;
+    right: 2%;
+    transform: rotate(-120deg);
+}
+
+.element5 {
+    height: 0;
+    width: 0;
+    margin: 2%;
+    border-style: solid;
+    border-width: 0 0 5vw 5vw;
+    border-color: transparent transparent #FAD02C transparent;
+}
+
+
+
+
+/* ==================== circle -element-named-2 --bigone ===================== */
+.element2 {
+    border: 10px solid white;
+    border-color: #C197D2;
+    border-radius: 50%;
+    height: 13vw;
+    width: 13vw;
+
+}
+
+.circle-position2 {
+    position: absolute;
+    bottom: 35%;
+    right: 0%;
+}
+
+/* ====================  circle -element-named-2-2 =====================*/
+.element2-2 {
+    border: 10px solid white;
+    border-color: #94d82d;
+    border-radius: 50%;
+    height: 5vw;
+    width: 5vw;
+
+}
+
+.circle-position2-2 {
+    position: absolute;
+    bottom: 23%;
+    right: 10%;
+}
+
+/* ===========================================  hero section contents -- images and text styles ========================================== */
+
+#nav-content {
+    padding: 0 15%;
+}
+
+.home {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+
+.home .home-img {
+    width: 400px;
+    border-radius: 50%;
+    overflow: hidden;
+    bottom: 10px;
+    padding-top: 20px;
+}
+
+.home .home-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    bottom: 10px;
+    padding-top: 20px;
+}
+
+
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+#hero:before {
+    content: "";
+    background: rgba(5, 13, 24, 0.3);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+#hero .hero-container {
+    position: relative;
+    z-index: 2;
+    min-width: 300px;
+}
+
+#hero h1 {
+    margin: 0 0 10px 0;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 86px;
+    color: #fff;
+}
+
+#hero p {
+    color: #fff;
+    margin-bottom: 50px;
+    font-size: 36px;
+    font-family: "Poppins", sans-serif;
+}
+
+#hero p span {
+    color: #fff;
+    padding-bottom: 4px;
+    letter-spacing: 1px;
+    border-bottom: 3px solid #ffae00;
+}
+
+@media (min-width: 1024px) {
+    #hero {
+        background-attachment: fixed;
+    }
+}
+
+@media (max-width: 768px) {
+    #hero h1 {
+        font-size: 28px;
+        line-height: 36px;
+    }
+
+    #hero h2 {
+        font-size: 18px;
+        line-height: 24px;
+        margin-bottom: 30px;
+    }
+}
+
+/*-----=================================================About section==================================*/
+
+#abtt {
+    position: relative;
+}
+
+.about {
+
+    padding: 20px;
+    margin: 5px;
+    border: 1px;
+    position: relative;
+    width: 100%;
+}
+
+.about h2 {
+    font-weight: bold;
+    font-size: 40px;
+    padding: 20px;
+    text-align: center;
+    margin: 0 auto;
+    width: fit-content;
+    box-shadow: 0px;
+    color: #EFE7D3;
+}
+
+.about .images {
+    height: 300px;
+    width: 300px;
+    display: flex;
+    flex: 1;
+    position: absolute;
+    left: 127px;
+    top: 117%;
+}
+
+.about .images .me {
+    padding: 2px;
+    height: 100%;
+    width: 100%;
+    box-shadow: #1f5297;
+    border-radius: 50%;
+
+}
+
+.about .abt-txt {
+    display: flex;
+    flex: 2;
+    height: 200px;
+    width: 550px;
+    float: right;
+    position: absolute;
+    left: 700px;
+    top: 137%;
+}
+
+
+
+
+
+
+
+
+/*=================================================== Projects description ==================================*/
+
+/* Float four columns side by side */
+.column {
+    float: left;
+    width: 25%;
+    height: 600px;
+    padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {
+    margin: 0 -5px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+    }
+}
+
+/* Style the counter cards */
+.card-2 {
+    height: 500px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    background-color: #f1f1f1;
+}
+
+.card-2 {
+    margin: 0 15px;
+    padding: 3px 5px;
+    border-radius: 15px;
+    background: #1f1f21;
+    box-shadow: inset 5px 5px 10px #121213,
+        inset -5px -5px 10px #2c2c2f;
+
+}
+
+/* 
+#abtt-P{
+    position: relative;
+}
+
+.about-P {
+
+    padding: 20px;
+    margin: 5px;
+    border: 1px;
+    position: relative;
+    width:100%;  
+}
+
+.about-P h2  {
+    font-weight: bold;
+    font-size: 40px;
+    padding: 20px;
+    text-align: center;
+    margin: 0 auto;
+    width: fit-content;
+    box-shadow: 0px;
+    color: #EFE7D3;
+}
+
+.about-P .images-P {
+    height: 300px;
+    width: 300px;
+    display: flex;
+    flex: 1;
+    position: absolute;
+    left: 127px;
+    top: 87%;
+}
+
+.about-P .images-P .me {
+    padding: 2px;
+    height: 100%;
+    width: 100%;
+    box-shadow: #1f5297;
+    border-radius: 50%;
+
+}
+
+.about-P .abt-P{
+    display: flex;
+    flex: 2;
+    height: 200px;
+    width: 550px;
+    float: right;
+    position: absolute;
+    left: 700px;
+    top: 87%;
+} 
+
+
+/* =========== project 2 =======*/
+/*
+
+
+#abtt-PP{
+    position: relative;
+}
+
+.about-PP {
+
+    padding: 20px;
+    margin: 5px;
+    border: 1px;
+    position: relative;
+    width:100%;  
+}
+
+.about-PP h2  {
+    font-weight: bold;
+    font-size: 40px;
+    padding: 20px;
+    text-align: center;
+    margin: 0 auto;
+    width: fit-content;
+    box-shadow: 0px;
+    color: #EFE7D3;
+}
+
+.about-PP .images-PP {
+    height: 300px;
+    width: 300px;
+    display: flex;
+    flex: 1;
+    position: absolute;
+    left: 127px;
+    top: 87%;
+}
+
+.about-PP .images-PP .me {
+    padding: 2px;
+    height: 100%;
+    width: 100%;
+    box-shadow: #1f5297;
+    border-radius: 50%;
+
+}
+
+.about-PP .abt-PP{
+    display: flex;
+    flex: 2;
+    height: 200px;
+    width: 550px;
+    float: right;
+    position: absolute;
+    left: 700px;
+    top: 87%;
+}  */
+
+
+/*==================================================== contact description ===============================================*/
+
+
+
+#contact{
+    position:relative;
+    top:50px;
+    padding-left: 10pc;
+
+}
+
+
+#oka{
+position: relative;
+top:200px;
+padding-top:4px;
+height:auto;
+
+}
+
+.card-c {
+
+    position: relative;
+    float: left;
+    padding:20px;
+    top:0px;
+    width: 300px;
+    height: 400px;
+    background: #fff;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+
+}
+
+.card-c .img-bx {
+
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+    transform: translateY(30px) scale(0.5);
+    transform-origin: top;
+
+}
+
+
+.meraimg {
+
+    position: absolute;
+    left:-40%;
+
+}
+
+
+.content-contact {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 30px;
+}
+
+
+.content-contact .detail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+.content-contact .detail h2 {
+    color: #444;
+    font-size: 1.6em;
+    font-weight: bolder;
+}
+
+
+.content-contact .detail h2 span {
+    font-size: 0.7em;
+    color: #03a9f4;
+    font-weight: bold;
+}
+
+
+.sci {
+
+    position: relative;
+    top:1px;
+    display: flex;
+    margin-top: 5px;
+
+}
+
+
+.sci li {
+    list-style: none;
+    margin: 4px;
+}
+
+
+.sci li a {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: transparent;
+    font-size: 1.5em;
+    color: #444;
+    text-decoration: none;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    transition: 0.5s;
+}
+
+
+.sci li a:hover {
+    background: #03a9f4;
+    color: #fff;
+} 
+
+/*===================================== contact form ====================================================*/
+
+.contactform {
+    float:left;
+    padding:10px;
+    background: rgba(255, 255, 255, 0.1);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+    height: 400px;
+    width: 51%;
+    margin-left: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.contact:after {
+    content: "";
+    display: table;
+   
+}
+
+.contact-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
