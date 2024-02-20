@@ -217,10 +217,10 @@
 .btn:active,
 .btn:visited {
     transition-timing-function: cubic-bezier(0.6, 4, 0.3, 0.8);
-    animation: gelatine 0.5s 1;
+    animation: gola 0.5s 1;
 }
 
-@keyframes gelatine {
+@keyframes gola {
 
     0%,
     100% {
