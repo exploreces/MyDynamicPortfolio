@@ -69,13 +69,13 @@ header {
     font-size: var(--p-font);
     font-weight: 500;
     color: var(--text-color);
-    margin: 10px 20px;
+    margin: 10px 40px;
     transition: all ease .50s;
     border-radius: 1px;
     background: #1f1f21;
     box-shadow: 10px 10px 20px #030303, -10px -10px 20px #16161a;
-    padding: 15px 15px;
-    /* Adjust padding as needed */
+    padding: 10px 10px;
+    
 }
 
 
@@ -102,7 +102,7 @@ header {
 
 #menu-icon {
     font-size: 28px;
-    margin-left: 10px;
+    margin-left: 5px;
     z-index: 6;
 }
 
@@ -421,120 +421,6 @@ header {
         inset -5px -5px 10px #2c2c2f;
 
 }
-
-/* 
-#abtt-P{
-    position: relative;
-}
-
-.about-P {
-
-    padding: 20px;
-    margin: 5px;
-    border: 1px;
-    position: relative;
-    width:100%;  
-}
-
-.about-P h2  {
-    font-weight: bold;
-    font-size: 40px;
-    padding: 20px;
-    text-align: center;
-    margin: 0 auto;
-    width: fit-content;
-    box-shadow: 0px;
-    color: #EFE7D3;
-}
-
-.about-P .images-P {
-    height: 300px;
-    width: 300px;
-    display: flex;
-    flex: 1;
-    position: absolute;
-    left: 127px;
-    top: 87%;
-}
-
-.about-P .images-P .me {
-    padding: 2px;
-    height: 100%;
-    width: 100%;
-    box-shadow: #1f5297;
-    border-radius: 50%;
-
-}
-
-.about-P .abt-P{
-    display: flex;
-    flex: 2;
-    height: 200px;
-    width: 550px;
-    float: right;
-    position: absolute;
-    left: 700px;
-    top: 87%;
-} 
-
-
-/* =========== project 2 =======*/
-/*
-
-
-#abtt-PP{
-    position: relative;
-}
-
-.about-PP {
-
-    padding: 20px;
-    margin: 5px;
-    border: 1px;
-    position: relative;
-    width:100%;  
-}
-
-.about-PP h2  {
-    font-weight: bold;
-    font-size: 40px;
-    padding: 20px;
-    text-align: center;
-    margin: 0 auto;
-    width: fit-content;
-    box-shadow: 0px;
-    color: #EFE7D3;
-}
-
-.about-PP .images-PP {
-    height: 300px;
-    width: 300px;
-    display: flex;
-    flex: 1;
-    position: absolute;
-    left: 127px;
-    top: 87%;
-}
-
-.about-PP .images-PP .me {
-    padding: 2px;
-    height: 100%;
-    width: 100%;
-    box-shadow: #1f5297;
-    border-radius: 50%;
-
-}
-
-.about-PP .abt-PP{
-    display: flex;
-    flex: 2;
-    height: 200px;
-    width: 550px;
-    float: right;
-    position: absolute;
-    left: 700px;
-    top: 87%;
-}  */
 
 
 /*==================================================== contact description ===============================================*/

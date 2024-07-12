@@ -4,3 +4,10 @@ grid section code class divs naming must be change --donee
 project card section must have content -- donee
 the nav bar function of scroolypsy with java script. -- donee
 
+
+
+next works --
+1. github links with minor projects 
+2.scroll bar change
+3. about section completion with social links.
+4. skills section makeover
